@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7c2d45">
+  <meta name="description" content="Vietnam Love — apprendre à construire une relation franco-vietnamienne sincère, équilibrée et sûre.">
+  <title>Vietnam Love — Comprendre, communiquer, construire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Vietnam Love accueil"><span class="brand-mark">♥</span><span>Vietnam <b>Love</b></span></a>
+    <nav class="nav"><a href="#programme" data-i18n="navProgram">Programme</a><a href="#offers" data-i18n="navOffers">Offres</a><a href="#ethics" data-i18n="navEthics">Nos engagements</a></nav>
+    <div class="nav-actions"><button id="languageToggle" class="language" aria-label="Changer de langue">FR</button><button id="accessButton" class="button button-outline" data-i18n="accessCode">Mon code d’accès</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="eyebrow">Une relation commence par la compréhension</span>
+        <h1 data-i18n="heroTitle">Deux cultures.<br><em>Une relation vraie.</em></h1>
+        <p data-i18n="heroText">Une formation pratique pour les femmes vietnamiennes qui souhaitent rencontrer un homme français et construire une relation sincère, équilibrée et sûre.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#programme" data-i18n="discover">Découvrir la formation</a><button class="button button-ghost" id="resumeButton" data-i18n="resume">Reprendre mon apprentissage</button></div>
+        <div class="hero-note"><span>✓</span><span data-i18n="heroNote">À votre rythme · Sur smartphone · Sans promesse irréaliste</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="arch"><div class="arch-inner"><span class="heart">♥</span><span class="art-caption">VIETNAM <i>×</i> FRANCE</span></div></div><span class="leaf leaf-one">✦</span><span class="leaf leaf-two">✧</span></div>
+    </section>
+    <section class="intro section-wrap">
+      <div><span class="eyebrow" data-i18n="introEyebrow">L’objectif</span><h2 data-i18n="introTitle">Être soi-même, avec les bons repères.</h2></div>
+      <p data-i18n="introText">Il ne s’agit pas de jouer un rôle pour plaire. Il s’agit de mieux se présenter, de communiquer clairement, de comprendre les différences culturelles sans généraliser et de reconnaître les signes d’une relation saine.</p>
+    </section>
+    <section id="programme" class="programme section-wrap">
+      <div class="section-heading"><div><span class="eyebrow" data-i18n="programEyebrow">Votre parcours</span><h2 data-i18n="programTitle">3 étapes pour avancer sereinement</h2></div><p data-i18n="programSub">Des leçons courtes, des exercices concrets et des outils à garder.</p></div>
+      <div id="moduleGrid" class="module-grid"></div>
+    </section>
+    <section id="offers" class="offers section-wrap">
+      <div class="section-heading"><div><span class="eyebrow" data-i18n="offersEyebrow">Accès à la formation</span><h2 data-i18n="offersTitle">Choisissez votre parcours</h2></div><p data-i18n="offersSub">Trois niveaux progressifs. Les tarifs et le paiement seront affichés après validation de la configuration commerciale.</p></div>
+      <div id="offerGrid" class="offer-grid"></div>
+      <p class="payment-note" data-i18n="paymentNote">Les paiements ne sont pas encore ouverts. Aucun règlement ne vous sera demandé sur cette version de prévisualisation.</p>
+    </section>
+    <section id="ethics" class="ethics section-wrap">
+      <div><span class="eyebrow" data-i18n="ethicsEyebrow">Notre ligne de conduite</span><h2 data-i18n="ethicsTitle">La confiance ne se négocie pas.</h2></div>
+      <div class="ethics-grid"><article><b>01</b><h3 data-i18n="ethic1Title">Sécurité d’abord</h3><p data-i18n="ethic1Text">Protéger ses données, vérifier les informations et organiser les premières rencontres dans des lieux publics.</p></article><article><b>02</b><h3 data-i18n="ethic2Title">Aucune manipulation</h3><p data-i18n="ethic2Text">Pas de faux profil, de scénario artificiel ni de promesse de mariage. La sincérité est le point de départ.</p></article><article><b>03</b><h3 data-i18n="ethic3Title">Pas de stéréotypes</h3><p data-i18n="ethic3Text">Chaque personne est différente. La culture donne des repères, jamais une explication universelle.</p></article></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">♥</span><span>Vietnam <b>Love</b></span></a><p data-i18n="footer">Une relation saine se construit à deux, dans le respect et la liberté.</p><span>© <span id="year"></span> Vietnam Love</span></footer>
+  <dialog id="lessonDialog" class="dialog"><div class="dialog-head"><div><span id="lessonKicker" class="eyebrow"></span><h2 id="lessonTitle"></h2></div><button class="icon-button" data-close="lessonDialog" aria-label="Fermer">×</button></div><div id="lessonBody" class="lesson-body"></div><div class="dialog-actions"><button id="previousLesson" class="button button-outline">←</button><button id="completeLesson" class="button button-primary">Leçon terminée ✓</button><button id="nextLesson" class="button button-primary">Suivante →</button></div></dialog>
+  <dialog id="accessDialog" class="dialog small-dialog"><div class="dialog-head"><div><span class="eyebrow" data-i18n="accessEyebrow">Espace apprenante</span><h2 data-i18n="accessTitle">Débloquer ma formation</h2></div><button class="icon-button" data-close="accessDialog" aria-label="Fermer">×</button></div><p data-i18n="accessText">La validation sécurisée des achats sera connectée avant l’ouverture commerciale. Cette version de démonstration n’accepte pas encore de codes réels.</p><button class="button button-outline full" data-close="accessDialog" data-i18n="understood">J’ai compris</button></dialog>
+  <script src="./app.js"></script>
+</body>
+</html>
